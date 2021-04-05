@@ -1,0 +1,516 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+html body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background: pink;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body>* {
+    width: 100%;
+    max-width: 1920px;
+}
+
+/* * body {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+
+} */
+
+button {
+    width: 245px;
+    height: 55px;
+    border-radius: 3px;
+    background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+    font-family: Roboto;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    line-height: 21px;
+    letter-spacing: 0em;
+    position: relative;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 0em;
+}
+
+p {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+
+input, button:focus {
+    outline: none;
+}
+
+button:hover, input:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+figcaption {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #333333;
+}
+
+.header {
+    height: 94px;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 10;
+    padding: 0px 150px;
+}
+
+.header__content {
+    width: 100%;
+    /*убрать для 1920*/
+    /* max-width: 1620px; */
+    /*убрать для 1920*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 26px;
+}
+
+.header__menu-link {
+    color: #333333;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 10px;
+}
+
+.header__menu-item {
+    display: inline;
+    margin-left: 83px;
+}
+
+.header__menu-item:first-child {
+    margin-left: 0;
+}
+
+.link_acive {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+/* The switch - the box around the slider */
+
+.switch {
+    position: relative;
+    display: block;
+    width: 54px;
+    height: 30px;
+}
+
+/* Hide default HTML checkbox */
+
+/* На мобильном синяя рамка появляется при нажатии */
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F2F2F2;
+    transition: 0.4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    left: 6px;
+    bottom: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #4F4F4F;
+}
+
+input:checked+.slider::before {
+    background-color: #1B1B1B;
+    transition: .4s;
+}
+
+/* input:focus + .slider {
+    box-shadow: 0 0 1px #4F4F4F;
+  } */
+
+input:checked+.slider:before {
+    /* -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px); */
+    transform: translateX(22px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.first-screen {
+    height: 940px;
+    background-image: url(../image/HolderFirstScreen.jpg);
+}
+
+.box {
+    width: 793px;
+    font-size: 89px;
+    font-weight: 900;
+    line-height: 104px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    padding-top: 206px;
+    margin-left: 360px;
+    margin-bottom: 37px;
+}
+
+.first-screen form {
+    margin-left: 360px;
+}
+
+.watch-online__btn {
+    position: relative;
+    text-align: left;
+    padding-left: 76px;
+}
+
+.watch-online__btn::before {
+    content: "";
+    background-image: url(../icon/PlayIcon.svg);
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 39px;
+    top: 12px;
+}
+
+.social-panel-horizontal {}
+
+.social-panel__list {
+    width: 20px;
+    height: 107px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-panel__item {
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+.social-panel__link {
+    width: 100%;
+    height: 100%;
+}
+
+.instagram {
+    background-image: url(../icon/InstagramIcon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.twitter {
+    background-image: url(../icon/TwitterIcon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.youtube {
+    background-image: url(../icon/YouTubeIcon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vk {
+    background-image: url(../icon/VKIcon.svg);
+    background-repeat: no-repeat;
+    background-position: center 100%;
+}
+
+/* HOW IT WORKS */
+
+.how-it-works {
+    padding-top: 100px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how-it-works__content {
+    width: 790px;
+}
+
+.how-it-works__header {
+    margin-bottom: 30px;
+}
+
+.how-it-works__paragraph {
+    margin-bottom: 30px;
+}
+
+.slider__img {
+    margin-bottom: 108px;
+}
+
+.how-it-works form {
+    margin-bottom: 101px;
+}
+
+.how-it-works__card {
+    width: 100%;
+    padding: 100px 0px;
+    background: #F2F2F2;
+}
+
+.card__group {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.card__item {
+    width: 380px;
+    text-align: center;
+}
+
+.card__img {
+    margin-bottom: 15px;
+}
+.card__description {
+margin-bottom: 15px;
+}
+.card__paragraph {
+    text-align: left;
+}
+/* PET IN ZOO */
+
+.pet-in-zoo {
+    padding: 100px 0px;
+    background: blueviolet;
+}
+
+.pet-in-zoo__header {
+    margin-bottom: 35px;
+}
+
+/* PAY AND FEET */
+
+.pay-and-feed {
+    padding: 100px 0px;
+    background: #F2F2F2;
+    text-align: center;
+}
+
+.pay-and-feed__header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pay-and-feed__description {
+    text-align: center;
+    margin-bottom: 92px;
+}
+
+.pay-and-feed-schema {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    width: 100%;
+    width: 1200px;
+}
+
+.schema__block {
+    width: 245px;
+    height: 245px;
+    border-radius: 50%;
+    background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+    padding: 3px;
+    position: relative;
+}
+
+.pay-and-feed-schema figure {
+    height: 100%;
+    border-radius: 50%;
+    background: #F2F2F2;
+}
+
+.img__pay {
+    margin-top: 63px;
+    margin-bottom: 18px;
+}
+
+.img__goes {
+    margin-top: 60px;
+    margin-bottom: 18px;
+}
+
+.img__gets {
+    margin-top: 64px;
+    margin-bottom: 18px;
+}
+
+.img__description {
+    padding: 0px 53px;
+}
+
+.schema__block:nth-child(2)::before {
+    content: "";
+    background-image: url(../icon/ArrowPay.svg);
+    width: 108px;
+    height: 16px;
+    position: absolute;
+    top: 120px;
+    left: -167px;
+}
+
+.schema__block:nth-child(2)::after {
+    content: "";
+    background-image: url(../icon/ArrowPay.svg);
+    width: 108px;
+    height: 16px;
+    position: absolute;
+    top: 120px;
+    right: -167px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+    background: white;
+    padding: 100px 0px;
+}
+
+.testimonials__header {
+    text-align: center;
+}
+
+/* MAP */
+
+.map {
+    background: #F2F2F2;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.map__header {
+    margin-bottom: 60px;
+}
+
+.map__img {
+    margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #333333;
+}
+
+/* .social-panel-horizontal {
+    
+}
+
+.social-panel__list {
+    width : 20px;
+    height: 107px;
+    display        : flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+
+.social-panel__item {
+    width           : 20px;
+    height          : 20px;
+    display         : flex;
+}
+
+.social-panel__link {
+    width : 100%;
+    height: 100%;
+}
+
+.instagram {
+    background-image   : url(../icon/InstagramIcon.svg);
+    background-repeat  : no-repeat;
+    background-position: center;
+}
+
+.twitter {
+    background-image   : url(../icon/TwitterIcon.svg);
+    background-repeat  : no-repeat;
+    background-position: center;
+}
+
+.youtube {
+    background-image   : url(../icon/YouTubeIcon.svg);
+    background-repeat  : no-repeat;
+    background-position: center;
+}
+
+.vk {
+    background-image   : url(../icon/VKIcon.svg);
+    background-repeat  : no-repeat;
+    background-position: center;
+} */
